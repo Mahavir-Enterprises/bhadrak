@@ -56,7 +56,8 @@
 
         .card img {
             width: 100%;
-            height: 250px;
+            max-height: 250px; /* prevents zooming */
+            height: auto;       /* keeps natural proportions */
             object-fit: contain;
         }
 
@@ -79,6 +80,13 @@
             text-decoration: none;
             font-size: 16px;
             box-shadow: 0 0 10px gray;
+        }
+
+        /* Responsive cards */
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -108,21 +116,26 @@
             <p>Delicious orange flavored drink</p>
         </div>
 
-    </div>class="card">
+        <div class="card">
             <img src="images/zero.jpg" alt="Mineral water">
             <h3>Zero Water - Added mineral</h3>
-            <p>Zero added mineral water 1 litter</p>
-        </div> 
-</section>
+            <p>Zero added mineral water 1 litre</p>
+        </div>
 
+        <div class="card">
+            <img src="images/pratham.jpg" alt="Pratham Water">
+            <h3>Pratham Water</h3>
+            <p>Pure refreshing bottled water</p>
+        </div>
+
+    </div>
+</section>
 
 <section>
     <h2>Contact Us</h2>
     <p>📞 +91 80187 48066</p>
     <p>📧 <a href="mailto:mahavirenterprises7666@gmail.com">mahavirenterprises7666@gmail.com</a></p>
 </section>
-
-
 
 <footer>
     <p>© 2026 Mahavir Enterprises</p>
