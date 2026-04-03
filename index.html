@@ -1,150 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahavir Enterprises</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-        }
-
-        header {
-            background: #b30000;
-            color: black;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header img {
-            width: 80px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-
-        section {
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-        }
-
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 15px;
-            width: 260px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card img {
-            width: 100%;
-            max-height: 250px; /* prevents zooming */
-            height: auto;       /* keeps natural proportions */
-            object-fit: contain;
-        }
-
-        footer {
-            background: #222;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        /* WhatsApp Button */
-        .whatsapp-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            padding: 12px 18px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 16px;
-            box-shadow: 0 0 10px gray;
-        }
-
-        /* Responsive cards */
-        @media (max-width: 768px) {
-            .card {
-                width: 90%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahavir Enterprises</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #b30000;
+      color: black;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #fff;
+      padding: 8px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 0 10px gray;
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
 <header>
-    <img src="images/logo.png" alt="Logo">
-    <h1>Mahavir Enterprises</h1>
-    <p>We deal in quality beverages & products</p>
+  <img src="images/logo.png" alt="Logo">
+  <h1>Mahavir Enterprises</h1>
+  <p>We deal in quality beverages & products</p>
 </header>
 
 <section>
-    <h2>Our Products</h2>
+  <h2>Our Products</h2>
+  <div class="products">
 
-    <div class="products">
-
-        <div class="card">
-            <img src="images/lemon.jpg" alt="Lemon Drink">
-            <h3>Gluco Buzz - Lemon Zest</h3>
-            <p>Refreshing lemon energy drink</p>
-        </div>
-
-        <div class="card">
-            <img src="images/orange.jpg" alt="Orange Drink">
-            <h3>Gluco Buzz - Orange Zinc</h3>
-            <p>Delicious orange flavored drink</p>
-        </div>
-
-        <div class="card">
-            <img src="images/zero.jpg" alt="Mineral water">
-            <h3>Zero Water - Added mineral</h3>
-            <p>Zero added mineral water 1 litre</p>
-        </div>
-
-        <div class="card">
-            <img src="images/pratham.jpg" alt="Pratham Water">
-            <h3>Pratham Water</h3>
-            <p>Pure refreshing bottled water</p>
-        </div>
-
+    <div class="card">
+      <img src="images/lemon.jpg" alt="Lemon Drink">
+      <h3>Gluco Buzz - Lemon Zest</h3>
+      <p>Refreshing lemon energy drink</p>
     </div>
+
+    <div class="card">
+      <img src="images/orange.jpg" alt="Orange Drink">
+      <h3>Gluco Buzz - Orange Zinc</h3>
+      <p>Delicious orange flavored drink</p>
+    </div>
+
+    <div class="card">
+      <img src="images/zero.jpg" alt="Mineral water">
+      <h3>Zero Water - Added mineral</h3>
+      <p>Zero added mineral water 1 litre</p>
+    </div>
+
+    <div class="card">
+      <img src="images/pratham.jpg" alt="Pratham Water">
+      <h3>Pratham Water</h3>
+      <p>Pure refreshing bottled water</p>
+    </div>
+
+    <div class="card">
+      <img src="images/bestzol.jpg" alt="Bestzol Mineral Water">
+      <h3>Bestzol Mineral Water</h3>
+      <p>Stay refreshed with pure & quality hydration</p>
+    </div>
+
+    <div class="card">
+      <img src="images/tenali.jpg" alt="Tenali Gouri Chakki Fresh Atta">
+      <h3>Tenali Gouri Chakki Fresh Atta</h3>
+      <p>100% stone-milled wheat flour, pure & nutritious</p>
+    </div>
+
+  </div>
 </section>
 
 <section>
-    <h2>Contact Us</h2>
-    <p>📞 +91 80187 48066</p>
-    <p>📧 <a href="mailto:mahavirenterprises7666@gmail.com">mahavirenterprises7666@gmail.com</a></p>
+  <h2>Contact Us</h2>
+  <p>📞 +91 80187 48066</p>
+  <p>📧 <a href="mailto:mahavirenterprises7666@gmail.com">mahavirenterprises7666@gmail.com</a></p>
 </section>
 
 <footer>
-    <p>© 2026 Mahavir Enterprises</p>
+  <p>© 2026 Mahavir Enterprises</p>
 </footer>
 
-<!-- WhatsApp Button -->
 <a href="https://wa.me/918018748066?text=Hello%20I%20want%20to%20know%20about%20your%20products" 
 target="_blank" class="whatsapp-btn">
-    💬 Chat with us
+  💬 Chat with us
 </a>
 
 </body>
