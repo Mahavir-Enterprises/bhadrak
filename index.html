@@ -46,31 +46,32 @@
     .card:hover {
       transform: scale(1.05);
     }
-    .card img {
+    .media {
+      position: relative;
       width: 100%;
       height: 220px;
+      overflow: hidden;
+    }
+    .media img, .media video {
+      width: 100%;
+      height: 100%;
       object-fit: contain;
-      background: #fff;
-      padding: 8px;
       border-radius: 8px;
+    }
+    .media video {
+      display: none;
+    }
+    .card:hover .media img {
+      display: none;
+    }
+    .card:hover .media video {
+      display: block;
     }
     footer {
       background: #222;
       color: white;
       padding: 15px;
       text-align: center;
-    }
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 16px;
-      box-shadow: 0 0 10px gray;
     }
     @media (max-width: 768px) {
       .card {
@@ -92,67 +93,105 @@
   <div class="products">
 
     <div class="card">
-      <img src="images/lemon.jpg" alt="Lemon Drink">
+      <div class="media">
+        <img src="images/tenali.jpg" alt="Tenali Gouri Chakki Fresh Atta">
+        <video src="videos/tenali.mp4" muted></video>
+      </div>
+      <h3>Tenali Gouri Chakki Fresh Atta</h3>
+      <p>100% stone-milled wheat flour</p>
+    </div>
+
+    <div class="card">
+      <div class="media">
+        <img src="images/pratham.jpg" alt="Pratham Mineral Water">
+        <video src="videos/pratham.mp4" muted></video>
+      </div>
+      <h3>Pratham Mineral Water</h3>
+      <p>Pure & quality hydration</p>
+    </div>
+
+    <div class="card">
+      <div class="media">
+        <img src="images/lemon.jpg" alt="Lemon Drink">
+        <video src="videos/lemon.mp4" muted></video>
+      </div>
       <h3>Gluco Buzz - Lemon Zest</h3>
       <p>Refreshing lemon energy drink</p>
     </div>
 
     <div class="card">
-      <img src="images/orange.jpg" alt="Orange Drink">
+      <div class="media">
+        <img src="images/orange.jpg" alt="Orange Drink">
+        <video src="videos/orange.mp4" muted></video>
+      </div>
       <h3>Gluco Buzz - Orange Zinc</h3>
       <p>Delicious orange flavored drink</p>
     </div>
 
     <div class="card">
-      <img src="images/zero.jpg" alt="Mineral water">
-      <h3>Zero Water - Added mineral</h3>
-      <p>Zero added mineral water 1 litre</p>
-    </div>
-
-    <!-- Removed Pratham Water card -->
-
-    <div class="card">
-      <img src="images/bestzol.jpg" alt="Bestzol Mineral Water">
+      <div class="media">
+        <img src="images/bestzol.jpg" alt="Bestzol Mineral Water">
+        <video src="videos/bestzol.mp4" muted></video>
+      </div>
       <h3>Bestzol Mineral Water</h3>
-      <p>Stay refreshed with pure & quality hydration</p>
+      <p>Pure & quality hydration</p>
     </div>
 
     <div class="card">
-      <img src="images/tenali.jpg" alt="Tenali Gouri Chakki Fresh Atta">
-      <h3>Tenali Gouri Chakki Fresh Atta</h3>
-      <p>100% stone-milled wheat flour, pure & nutritious</p>
-    </div>
-
-    <!-- New Product: Nata Buzz Lychee -->
-    <div class="card">
-      <img src="images/nata.jpg" alt="Nata Buzz Lychee Drink">
+      <div class="media">
+        <img src="images/nata.jpg" alt="Nata Buzz Lychee Drink">
+        <video src="videos/nata-lychee.mp4" muted></video>
+      </div>
       <h3>Nata Buzz - Lychee</h3>
-      <p>275ml ready-to-serve fruit beverage with 10% Nata de Coco</p>
+      <p>275ml fruit beverage with Nata de Coco</p>
+    </div>
+
+    <div class="card">
+      <div class="media">
+        <img src="images/mango.jpg" alt="Nata Buzz Mango">
+        <video src="videos/nata-mango.mp4" muted></video>
+      </div>
+      <h3>Nata Buzz - Mango</h3>
+      <p>275ml mango fruit beverage with Nata de Coco</p>
+    </div>
+
+    <div class="card">
+      <div class="media">
+        <img src="images/orangebuzz.jpg" alt="Nata Buzz Orange">
+        <video src="videos/nata-orange.mp4" muted></video>
+      </div>
+      <h3>Nata Buzz - Orange</h3>
+      <p>275ml orange fruit beverage with Nata de Coco</p>
+    </div>
+
+    <div class="card">
+      <div class="media">
+        <img src="images/chilliguava.jpg" alt="Nata Buzz Chilli Guava">
+        <video src="videos/nata-guava.mp4" muted></video>
+      </div>
+      <h3>Nata Buzz - Chilli Guava</h3>
+      <p>273ml guava drink with a spicy twist</p>
+    </div>
+
+    <div class="card">
+      <div class="media">
+        <img src="images/zero.jpg" alt="Zero Water">
+        <video src="videos/zero.mp4" muted></video>
+      </div>
+      <h3>Zero Water</h3>
+      <p>Available in multiple pack sizes</p>
     </div>
 
   </div>
 </section>
 
-
-<!-- About Us section -->
 <section style="background:#f0f0f0; padding:40px 20px; text-align:center;">
   <h2 style="color:#b30000; margin-bottom:20px;">About Us</h2>
   <p style="max-width:800px; margin:0 auto; font-size:16px; line-height:1.6;">
-    <strong>Mahavir Enterprises</strong> is dedicated to bringing you 
-    refreshing beverages and nutritious staples that combine quality, taste, and trust. 
-    Our range includes energizing drinks like <em>Gluco Buzz Lemon Zest</em>, 
-    <em>Orange Zinc</em>, and <em>Nata Buzz Lychee</em>, 
-    pure hydration with <em>Zero Water</em> and <em>Bestzol Mineral Water</em>, 
-    and wholesome food essentials like <em>Tenali Gouri Chakki Fresh Atta</em>.
-  </p>
-  <p style="max-width:800px; margin:20px auto 0; font-size:16px; line-height:1.6;">
-    We believe in blending tradition with innovation — offering modern ready-to-serve beverages 
-    alongside time-tested staples. Our mission is simple: to keep families refreshed, nourished, 
-    and satisfied with products they can rely on every day.
+    <strong>Mahavir Enterprises</strong> is dedicated to bringing you refreshing beverages and nutritious staples that combine quality, taste, and trust.
   </p>
 </section>
 
-<!-- Contact Us section -->
 <section>
   <h2>Contact Us</h2>
   <p>📞 +91 80187 48066</p>
@@ -163,4 +202,17 @@
   <p>© 2026 Mahavir Enterprises</p>
 </footer>
 
+<script>
+  document.querySelectorAll('.card video').forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play();
+    });
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+</script>
 
+</body>
+</html>
